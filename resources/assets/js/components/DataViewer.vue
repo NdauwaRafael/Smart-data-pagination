@@ -120,8 +120,8 @@
             </table>
             <div class="table-footer">
                 <span @click="prev()" class="paginate-btn">&laquo; Pervious</span>
-                <span>Displaying {{model.from}} - {{model.to}} from {{model.total}} rows.</span>
                 <span @click="next()" class="paginate-btn">Next &raquo;</span>
+                <span>Displaying {{model.from}} - {{model.to}} from {{model.total}} rows.</span>
             </div>
             <div class="paginated">
                 <el-pagination

@@ -12,7 +12,7 @@
 </head>
 <body>
 <div id="app">
-    <div class="grid-container">
+    <div class="grid-container class-table">
         <data-viewer source="api/customer" title="Customer Data"></data-viewer>
     </div>
 </div>

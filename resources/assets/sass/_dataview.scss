@@ -84,3 +84,13 @@ body {
 
 
 }
+
+.class-table {
+  background: blue;
+  table {
+    background: blue;
+    th {
+      background: #eee;
+    }
+  }
+}
