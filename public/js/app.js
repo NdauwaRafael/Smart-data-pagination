@@ -55463,7 +55463,7 @@ exports = module.exports = __webpack_require__(73)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -56094,7 +56094,11 @@ var render = function() {
             return _c(
               "tr",
               _vm._l(row, function(value, key) {
-                return _c("td", [_vm._v(_vm._s(value))])
+                return _c("td", [
+                  key != "created_at" && key != "updated_at"
+                    ? _c("span", [_vm._v(_vm._s(value))])
+                    : _vm._e()
+                ])
               })
             )
           })
@@ -56140,17 +56144,6 @@ var render = function() {
           )
         ])
       ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "paginated" },
-        [
-          _c("el-pagination", {
-            attrs: { background: "", layout: "prev, pager, next", total: 1000 }
-          })
-        ],
-        1
-      ),
       _vm._v(" "),
       _c("div", { staticClass: "per_page" }, [
         _c("div", { staticClass: "grid-x grid-padding-x" }, [

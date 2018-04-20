@@ -113,7 +113,9 @@
                 </thead>
                 <tbody>
                 <tr v-for="row in model.data">
-                    <td v-for="(value, key) in row">{{value}}</td>
+                    <td v-for="(value, key) in row">
+                        <span v-if="key != 'created_at' && key != 'updated_at' ">{{value}}</span>
+                    </td>
                 </tr>
 
                 </tbody>
@@ -123,13 +125,7 @@
                 <span @click="next()" class="paginate-btn">Next &raquo;</span>
                 <span>Displaying {{model.from}} - {{model.to}} from {{model.total}} rows.</span>
             </div>
-            <div class="paginated">
-                <el-pagination
-                        background
-                        layout="prev, pager, next"
-                        :total="1000">
-                </el-pagination>
-            </div>
+
             <div class="per_page">
                     <div class="grid-x grid-padding-x">
                         <div class="small-8 cell">

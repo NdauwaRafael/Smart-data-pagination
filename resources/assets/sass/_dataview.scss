@@ -86,12 +86,53 @@ body {
 }
 
 .class-table {
-  background: blue;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 3px 3px 0 0;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  clear: both;
   table {
-    background: blue;
+    background-color: #ffffff;
+    border: 0;
     th {
-      background: #eee;
-      color: red;
+      background-color: #f8f8f8;
+      color: #5c5c5c;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.6px;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    tbody {
+      border: 0;
+      tr {
+        padding: 27px 10px;
+        background-color: #ffffff;
+        border-top: 1px solid #eaf0f4;
+        border-right: 0;
+        border-left: 0;
+        td {
+          padding: 27px 5px;
+          color: #626262;
+          font-family: Roboto, sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .table-footer {
+    span {
+      &.paginate-btn {
+        padding: 5px;
+        color: #fff;
+        background: #626262;
+      }
     }
   }
 }
