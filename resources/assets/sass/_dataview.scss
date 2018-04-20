@@ -1,0 +1,86 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.dv-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+
+
+  &-select {
+    display: block;
+    width: 100%;
+    padding-left: 10px;
+  }
+  &-columns {
+    flex:2;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10px;
+
+    &-span {
+      width: 20%;
+      padding-left: 10px;
+    }
+  }
+
+  &-operators {
+    flex:2;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+
+  &-search {
+    flex:3;
+    padding-left: 10px;
+  }
+  &-input {
+    display: block;
+    width: 100%;
+  }
+
+  &-btn {
+    display: block;
+    width: 100%;
+  }
+  &-submit {
+    flex:1;
+    padding-left: 10px;
+  }
+
+  &-title {
+    flex: 2;
+    padding-left: 10px;
+  }
+
+
+}
+.paginated {
+  float: right;
+  width: 35%;
+}
+.table-footer {
+  float: left;
+}
+
+.per_page {
+  width: 30%;
+  float:left;
+  margin-top: 30px;
+}
+
+.paginate-btn {
+  background: #80cbc4 ;
+  padding: 5px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+
+
+}
