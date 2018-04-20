@@ -110,6 +110,19 @@ body {
   border-radius: 5px;
 }
 
+.class-table {
+  background: blue;
+}
+
+.class-table table {
+  background: blue;
+}
+
+.class-table table th {
+  background: #eee;
+  color: red;
+}
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.4.4-rc1
